@@ -7,5 +7,5 @@ Scenario Outline: Verify Registration is successfully done on the website
 	Then Validate correct name and surname is displayed on landing lage
 
 Examples:
-|  emailAddress     |
-|ukarkar20@gmail.com|
+|  emailAddress         |
+|adsfsdfsdf392@gmail.com|
