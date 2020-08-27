@@ -199,25 +199,37 @@ public class RegistrationPage {
 		return driver.findElement(submitButton);
 	}
 	
-	public WebElement validateDetails() throws IOException
+	public WebElement validateDetailsName() throws IOException
 	{		
 		String var =driver.findElement(viewDetails).getText();
 		String firstName =ExcelReader.getvalue("cust_FirstName");
-		String lastName =ExcelReader.getvalue("cust_LastName");
+		
 		
 		if(var.contains(firstName))
 		{
-			System.out.println("The firstname is correct");
-		}
-		else if(var.contains(lastName))
-		{
-			System.out.println("The lastname is  correct");
+			System.out.println("The Name is correct");
 		}
 		else 
 		{
-			System.out.println("Name and surname is not found");
+			System.out.println("Name is not found");
 		}
 		
+		return driver.findElement(viewDetails);
+	}
+	
+	public WebElement validateDetailsSurname() throws IOException
+	{
+		String var =driver.findElement(viewDetails).getText();
+		String lastName =ExcelReader.getvalue("cust_LastName");
+		
+		if(var.contains(lastName))
+		{
+			System.out.println("The Surname is  correct");
+		}
+		else 
+		{
+			System.out.println("Surname is not found");
+		}
 		return driver.findElement(viewDetails);
 	}
 }
