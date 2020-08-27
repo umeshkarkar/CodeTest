@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 27 03:28:14 IST 2020</td>
+<td>Started on:</td><td>Thu Aug 27 12:54:12 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32283 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25210 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testRunner.testRunner.feature()'><b>feature</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Login into Application</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS (93ab1acc07f82789a55ed31c1ffad04f)] -&gt; xpath: //a[@class=&apos;account&apos;]]] but found [Umesh Karkar]
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Login - My Store] but found [Login]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS (93ab1acc07f82789a55ed31c1ffad04f)] -&gt; xpath: //a[@class=&apos;account&apos;]]] but found [Umesh Karkar]
-	at stepDefinitions.StepDefinition.validate_correct_name_and_surname_is_displayed_on_landing_lage(StepDefinition.java:73)
-	at ?.Then Validate correct name and surname is displayed on landing lage(login.feature:7)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1494794848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1494794848'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS (93ab1acc07f82789a55ed31c1ffad04f)] -&gt; xpath: //a[@class=&apos;account&apos;]]] but found [Umesh Karkar]
+Caused by: java.lang.AssertionError: expected [Login - My Store] but found [Login]
+	at stepDefinitions.StepDefinition.user_create_an_account_with_address(StepDefinition.java:42)
+	at ?.When User create an account with &quot;adsfsdfsdf392@gmail.com&quot; address(login.feature:5)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486553742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1486553742'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Login - My Store] but found [Login]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -111,24 +111,25 @@ Caused by: java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS (93ab1acc07f82789a55ed31c1ffad04f)] -&gt; xpath: //a[@class=&apos;account&apos;]]] but found [Umesh Karkar]
+Caused by: java.lang.AssertionError: expected [Login - My Store] but found [Login]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at stepDefinitions.StepDefinition.validate_correct_name_and_surname_is_displayed_on_landing_lage(StepDefinition.java:73)
-	at ?.Then Validate correct name and surname is displayed on landing lage(login.feature:7)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at stepDefinitions.StepDefinition.user_create_an_account_with_address(StepDefinition.java:42)
+	at ?.When User create an account with &quot;adsfsdfsdf392@gmail.com&quot; address(login.feature:5)
 </pre></div></td>
-<td>31</td>
+<td>24</td>
 <td>testRunner.testRunner@130f889</td></tr>
 <tr>
 <td title='testRunner.testRunner.feature()'><b>feature</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Feature</td>
 <td><div><pre>java.lang.NullPointerException
 	at resources.BaseClass.getScreenShotPath(BaseClass.java:46)
 	at pageObjects.Listeners.onTestFailure(Listeners.java:47)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace524606891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace524606891'><pre>java.lang.NullPointerException
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace998283025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace998283025'><pre>java.lang.NullPointerException
 	at resources.BaseClass.getScreenShotPath(BaseClass.java:46)
 	at pageObjects.Listeners.onTestFailure(Listeners.java:47)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
@@ -154,7 +155,7 @@ Caused by: java.lang.AssertionError: expected [[[ChromeDriver: chrome on WINDOWS
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>32</td>
+<td>24</td>
 <td>testRunner.testRunner@130f889</td></tr>
 </table><p>
 </body>
