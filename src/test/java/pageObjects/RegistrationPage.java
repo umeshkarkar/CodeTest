@@ -1,11 +1,15 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
+import testData.ExcelReader;
 
 public class RegistrationPage {
 	
@@ -31,7 +35,7 @@ public class RegistrationPage {
 	private By mobileNum =By.id("phone_mobile");
 	private By refAddress =By.id("alias");
 	private By submitButton =By.xpath("//button[@id='submitAccount']");
-	private By viewDetails =By.xpath("//a[@class='account']");
+	private By viewDetails =By.xpath("//a[@class='account']/span");
 	
 	//constructor
 	public RegistrationPage(WebDriver driver)
@@ -195,8 +199,25 @@ public class RegistrationPage {
 		return driver.findElement(submitButton);
 	}
 	
-	public WebElement validateDetails()
-	{
+	public WebElement validateDetails() throws IOException
+	{		
+		String var =driver.findElement(viewDetails).getText();
+		String firstName =ExcelReader.getvalue("cust_FirstName");
+		String lastName =ExcelReader.getvalue("cust_LastName");
+		
+		if(var.contains(firstName))
+		{
+			System.out.println("The firstname is correct");
+		}
+		else if(var.contains(lastName))
+		{
+			System.out.println("The lastname is  correct");
+		}
+		else 
+		{
+			System.out.println("Name and surname is not found");
+		}
+		
 		return driver.findElement(viewDetails);
 	}
 }

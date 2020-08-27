@@ -8,4 +8,5 @@ Scenario Outline: Verify Registration is successfully done on the website
 
 Examples:
 |  emailAddress         |
-|adsfsdfsdf392@gmail.com|
+|sdfffsdf2@gmail.com    |
+#|adsfsdfsdf392@gmail.com|
