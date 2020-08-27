@@ -203,9 +203,17 @@ public class RegistrationPage {
 	{		
 		String var =driver.findElement(viewDetails).getText();
 		String firstName =ExcelReader.getvalue("cust_FirstName");
+		String lastName =ExcelReader.getvalue("cust_LastName");
+		
+		String expectedName =firstName.concat(lastName);
+		System.out.println(expectedName);
 		
 		
-		if(var.contains(firstName))
+		Assert.assertEquals(expectedName, var);
+		
+		return driver.findElement(viewDetails);
+	}		
+	/*	if(var.contains(expectedName))
 		{
 			System.out.println("The Name is correct");
 		}
@@ -215,7 +223,7 @@ public class RegistrationPage {
 		}
 		
 		return driver.findElement(viewDetails);
-	}
+	}*/
 	
 	public WebElement validateDetailsSurname() throws IOException
 	{

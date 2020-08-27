@@ -66,8 +66,9 @@ public class ExcelReader {
 		
 	public static void main(String[] args) throws IOException
 	{
-		System.out.println(getvalue("cust_FirstName"));
-	
+	/*	String s=getvalue("cust_FirstName");
+		String s1=getvalue("cust_LastName");
+		System.out.println(s.concat(s1));*/
 	}
 
 }
