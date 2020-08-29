@@ -48,7 +48,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Aug 27, 2020 09:09:54 PM</span>
+                    <span class="badge badge-primary">Aug 29, 2020 12:25:34 PM</span>
                 </a>
             </li>
         </ul>
@@ -124,8 +124,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">feature</p>
-							<p class="duration text-sm">0h 0m 28s+14ms</p>
-							<span class="datetime">21:09:55 PM</span>
+							<p class="duration text-sm">0h 0m 35s+712ms</p>
+							<span class="datetime">12:25:34 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -133,9 +133,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">feature</h5>
-									<span class='badge badge-success'>08.27.2020 21:09:55</span>
-									<span class='badge badge-danger'>08.27.2020 21:10:23</span>
-									<span class='badge badge-default'>0h 0m 28s+14ms</span>
+									<span class='badge badge-success'>08.29.2020 12:25:34</span>
+									<span class='badge badge-danger'>08.29.2020 12:26:10</span>
+									<span class='badge badge-default'>0h 0m 35s+712ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -152,9 +152,17 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>9:10:23 PM</td>
+				<td>12:26:10 PM</td>
 				<td>
-						<textarea disabled class="code-block">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
+						<textarea disabled class="code-block">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HIPUNL68056', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\UKarkar2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 977233a43737d510c004dd93f2cc7441
+*** Element info: {Using=id, value=id_gender1}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -182,48 +190,32 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at pageObjects.RegistrationPage.validateDetailsName(RegistrationPage.java:212)
-	at stepDefinitions.StepDefinition.validate_correct_name_and_surname_is_displayed_on_landing_lage(StepDefinition.java:73)
-	at ?.Then Validate correct name and surname is displayed on landing lage(login.feature:7)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>9:10:23 PM</td>
-				<td>
-						<textarea disabled class="code-block">java.lang.NullPointerException
-	at resources.BaseClass.getScreenShotPath(BaseClass.java:46)
-	at pageObjects.Listeners.onTestFailure(Listeners.java:47)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HIPUNL68056', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\UKarkar2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 977233a43737d510c004dd93f2cc7441
+*** Element info: {Using=id, value=id_gender1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.RegistrationPage.selectGender(RegistrationPage.java:51)
+	at stepDefinitions.StepDefinition.navigate_to_Register_page_and_enter_all_details_to_register_site(StepDefinition.java:50)
+	at ?.And Navigate to Register page and enter all details to register site(login.feature:6)
 </textarea>
 				</td>
 			</tr>
@@ -262,7 +254,7 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">2</span>
+					<span class="badge badge-primary">1</span>
 					</a>
 				</li>
 			</ul>
@@ -295,42 +287,7 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>21:09:55 PM</td>
-									<td class='linked' test-id='1'>
-										feature
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">java.lang.NullPointerException</p>
-							<p class="duration text-sm">1 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>java.lang.NullPointerException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>21:09:55 PM</td>
+									<td>12:25:34 PM</td>
 									<td class='linked' test-id='1'>
 										feature
 									</td>
@@ -395,7 +352,7 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 				<div class="card-footer">
 					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 					<div>
-						<small data-tooltip='100%'><b>2</b> events failed, 
+						<small data-tooltip='100%'><b>1</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -429,7 +386,7 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Aug 27, 2020 09:09:54 PM</h4>
+							<h4 class="font-weight-light mt-4">Aug 29, 2020 12:25:34 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -445,7 +402,7 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 28s+796ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 36s+355ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -526,9 +483,9 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 2,
+		eventsCount: 1,
 		passEvents: 0,
-		failEvents: 2,
+		failEvents: 1,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -540,7 +497,7 @@ Caused by: java.lang.AssertionError: expected [xyz abc] but found [xyzabc]
 </script>
 <script>
 	var timeline = {
-	        "feature":28.014
+	        "feature":35.712
 	};
 </script>
                 </div>

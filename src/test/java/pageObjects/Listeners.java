@@ -43,13 +43,13 @@ public class Listeners extends BaseClass implements ITestListener {
 		{
 			
 		}
-		try {
+		/*try {
 			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testCaseName,driver), result.getMethod().getMethodName());
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		
 	}
 

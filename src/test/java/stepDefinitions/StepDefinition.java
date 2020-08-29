@@ -71,6 +71,6 @@ public class StepDefinition extends BaseClass{
 	public void validate_correct_name_and_surname_is_displayed_on_landing_lage() throws Throwable {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			rp.validateDetailsName();
-			//rp.validateDetailsSurname();
+			
 	}
 }

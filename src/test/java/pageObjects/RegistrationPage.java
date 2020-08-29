@@ -201,7 +201,7 @@ public class RegistrationPage {
 	
 	public WebElement validateDetailsName() throws IOException
 	{		
-		String var =driver.findElement(viewDetails).getText();
+		String displayNameOnPage =driver.findElement(viewDetails).getText();
 		String firstName =ExcelReader.getvalue("cust_FirstName");
 		String lastName =ExcelReader.getvalue("cust_LastName");
 		
@@ -209,35 +209,9 @@ public class RegistrationPage {
 		System.out.println(expectedName);
 		
 		
-		Assert.assertEquals(expectedName, var);
+		Assert.assertEquals(expectedName, displayNameOnPage);
 		
 		return driver.findElement(viewDetails);
 	}		
-	/*	if(var.contains(expectedName))
-		{
-			System.out.println("The Name is correct");
-		}
-		else 
-		{
-			System.out.println("Name is not found");
-		}
-		
-		return driver.findElement(viewDetails);
-	}*/
 	
-	public WebElement validateDetailsSurname() throws IOException
-	{
-		String var =driver.findElement(viewDetails).getText();
-		String lastName =ExcelReader.getvalue("cust_LastName");
-		
-		if(var.contains(lastName))
-		{
-			System.out.println("The Surname is  correct");
-		}
-		else 
-		{
-			System.out.println("Surname is not found");
-		}
-		return driver.findElement(viewDetails);
-	}
 }
